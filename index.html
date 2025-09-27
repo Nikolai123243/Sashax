@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoxBell - Boxing Training App</title>
+    <title>SASHAX - Innovating Beyond</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -14,17 +14,19 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <div class="logo-text">
-                        <span class="logo-title">BOXBELL</span>
-                    </div>
+                    <img src="sashax_logo.png" alt="SASHAX" class="logo-image">
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#features" class="nav-link">Features</a></li>
-                    <li><a href="#modes" class="nav-link">Modes</a></li>
-                    <li><a href="#stats" class="nav-link">Stats</a></li>
-                    <li><a href="#download" class="nav-link">Download</a></li>
+                    <li><a href="#apps" class="nav-link">Apps</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#labs" class="nav-link">Innovation Labs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+                <button class="cta-button">
+                    <i class="fas fa-arrow-right"></i>
+                    Discover our Apps
+                </button>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -37,319 +39,112 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">BoxBell</h1>
-            <p class="hero-subtitle">The perfect boxing timer for your training</p>
-            <p class="hero-description">Professional timer with training modes adapted to your level. From beginners to professionals.</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary">Download App</button>
-                <button class="btn btn-secondary">View Features</button>
+            <div class="hero-logo">
+                <img src="sashax_logo.png" alt="SASHAX" class="hero-logo-image">
             </div>
-            <div class="app-badges">
-                <div class="badge">
-                    <i class="fab fa-apple"></i>
-                    <span>App Store</span>
-                </div>
-                <div class="badge">
-                    <i class="fab fa-google-play"></i>
-                    <span>Google Play</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image">
-            <div class="phone-mockup">
-                <div class="phone-screen">
-                    <div class="app-interface">
-                        <div class="app-header">
-                            <div class="app-title">BoxBell</div>
-                            <div class="app-subtitle">Beginner Mode • AUTO</div>
-                        </div>
-                        <div class="phase-indicator">WARM UP</div>
-                        <div class="timer-circle">
-                            <div class="timer-display">1:00</div>
-                        </div>
-                        <div class="stats-row">
-                            <div class="stat">
-                                <span class="stat-label">Completed</span>
-                                <span class="stat-value">0</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-label">Current</span>
-                                <span class="stat-value">0</span>
-                            </div>
-                        </div>
-                        <div class="control-buttons">
-                            <button class="control-btn play-btn">
-                                <i class="fas fa-play"></i>
-                            </button>
-                            <button class="control-btn reset-btn">
-                                <i class="fas fa-redo"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="hero-tagline">Innovating Beyond</p>
+            <button class="hero-cta">
+                <i class="fas fa-arrow-right"></i>
+                Discover our Apps
+            </button>
+            <p class="hero-subtitle">Minimalist. Futuristic. Digital holdings.</p>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Apps Section -->
+    <section id="apps" class="apps">
         <div class="container">
-            <h2 class="section-title">Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
+            <h2 class="section-title">Our Apps</h2>
+            <div class="apps-grid">
+                <div class="app-card featured-app">
+                    <div class="app-icon">
                         <i class="fas fa-stopwatch"></i>
                     </div>
-                    <h3>Smart Timer</h3>
-                    <p>Automatic round timer with clear visual indicators and alert sounds for each training phase.</p>
+                    <h3>BoxBell</h3>
+                    <p>Professional boxing timer with multiple training modes, progress tracking, and intuitive interface. Perfect for boxers of all levels.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Smart Timer</span>
+                        <span class="feature-tag">Multiple Modes</span>
+                        <span class="feature-tag">Progress Tracking</span>
+                    </div>
+                    <div class="app-status available">Available</div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Multiple Modes</h3>
-                    <p>Adapted training modes: Beginner, Amateur and Professional with optimized durations for each level.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Detailed Statistics</h3>
-                    <p>Complete progress tracking with session statistics, total time and completed rounds.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-volume-up"></i>
-                    </div>
-                    <h3>Sound Alerts</h3>
-                    <p>Audible notifications for round start and end, with option to customize alert sounds.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Intuitive Interface</h3>
-                    <p>Clean and easy-to-use design that lets you focus on your training without distractions.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-history"></i>
-                    </div>
-                    <h3>Training History</h3>
-                    <p>Complete record of all your sessions with dates, duration and performance to track your progress.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Training Modes Section -->
-    <section id="modes" class="modes">
-        <div class="container">
-            <h2 class="section-title">Training Modes</h2>
-            <p class="section-subtitle">Choose the mode that best fits your experience level</p>
-            <div class="modes-grid">
-                <div class="mode-card beginner">
-                    <div class="mode-header">
-                        <div class="mode-icon">
-                            <i class="fas fa-seedling"></i>
+                <div class="app-card coming-soon-card">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon">
+                            <i class="fas fa-plus"></i>
                         </div>
-                        <h3>Beginner</h3>
-                        <div class="mode-badge">Recommended</div>
-                    </div>
-                    <div class="mode-details">
-                        <div class="time-spec">
-                            <span class="time-label">Round:</span>
-                            <span class="time-value">2 min</span>
-                        </div>
-                        <div class="time-spec">
-                            <span class="time-label">Rest:</span>
-                            <span class="time-value">1 min</span>
-                        </div>
-                        <p class="mode-description">Perfect for starting your boxing journey. Short rounds with generous rest periods.</p>
-                        <ul class="mode-features">
-                            <li>2 minute rounds</li>
-                            <li>1 minute rest</li>
-                            <li>Warm-up included</li>
-                            <li>Ideal for beginners</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="mode-card amateur">
-                    <div class="mode-header">
-                        <div class="mode-icon">
-                            <i class="fas fa-fist-raised"></i>
-                        </div>
-                        <h3>Amateur</h3>
-                    </div>
-                    <div class="mode-details">
-                        <div class="time-spec">
-                            <span class="time-label">Round:</span>
-                            <span class="time-value">3 min</span>
-                        </div>
-                        <div class="time-spec">
-                            <span class="time-label">Rest:</span>
-                            <span class="time-value">1 min</span>
-                        </div>
-                        <p class="mode-description">For intermediate level trainers seeking moderate intensity.</p>
-                        <ul class="mode-features">
-                            <li>3 minute rounds</li>
-                            <li>1 minute rest</li>
-                            <li>Moderate pace</li>
-                            <li>For amateur level</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="mode-card professional">
-                    <div class="mode-header">
-                        <div class="mode-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Professional</h3>
-                    </div>
-                    <div class="mode-details">
-                        <div class="time-spec">
-                            <span class="time-label">Round:</span>
-                            <span class="time-value">3 min</span>
-                        </div>
-                        <div class="time-spec">
-                            <span class="time-label">Rest:</span>
-                            <span class="time-value">30 sec</span>
-                        </div>
-                        <p class="mode-description">Professional intensity with minimal rest for maximum endurance.</p>
-                        <ul class="mode-features">
-                            <li>3 minute rounds</li>
-                            <li>30 second rest</li>
-                            <li>High intensity</li>
-                            <li>Professional level</li>
-                        </ul>
+                        <div class="coming-soon-text">Coming Soon</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Progress Tracking</h2>
-            <p class="section-subtitle">Monitor your progress with detailed statistics</p>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-target"></i>
-                    </div>
-                    <div class="stat-content">
-                        <h3>4</h3>
-                        <p>Total Rounds</p>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="stat-content">
-                        <h3>12m</h3>
-                        <p>Total Time</p>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-calendar"></i>
-                    </div>
-                    <div class="stat-content">
-                        <h3>1</h3>
-                        <p>Sessions</p>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="stat-content">
-                        <h3>4.0</h3>
-                        <p>Avg Rounds</p>
-                    </div>
-                </div>
+            <h2 class="section-title">About SASHAX</h2>
+            <div class="about-content">
+                <p class="about-description">
+                    SASHAX is a holding company for digital applications and projects. We incubate, finance, and scale software initiatives with a focus on clean design, performance, and measurable impact. Our portfolio spans consumer, enterprise, and experimental products guided by a single principle: advance the frontier while keeping interfaces simple.
+                </p>
             </div>
-            <div class="stats-details">
-                <div class="recent-sessions">
-                    <h3>Recent Sessions</h3>
-                    <div class="session-item">
-                        <div class="session-info">
-                            <h4>Beginner Training</h4>
-                            <p>Wed, Sep 24</p>
-                            <p>Duration: 12m</p>
-                        </div>
-                        <div class="session-stats">
-                            <span class="rounds-badge">4 rounds</span>
-                            <p>Avg: 3m 12s per round</p>
-                        </div>
+        </div>
+    </section>
+
+
+    <!-- Innovation Labs Section -->
+    <section id="labs" class="labs">
+        <div class="container">
+            <h2 class="section-title">Innovation Labs</h2>
+            <div class="labs-content">
+                <div class="labs-card">
+                    <div class="labs-icon">
+                        <i class="fas fa-rocket"></i>
                     </div>
-                </div>
-                <div class="performance-insights">
-                    <h3>This Month's Summary</h3>
-                    <div class="insights-card">
-                        <ul>
-                            <li>Average session time: 12m</li>
-                            <li>Average rounds per session: 4.0</li>
-                            <li>Total training time: 12m</li>
-                        </ul>
-                    </div>
+                    <p>We prototype emerging experiences in AI, realtime systems, and ambient interfaces. Experiments that demonstrate traction graduate into standalone products under the SASHAX umbrella.</p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- Download Section -->
-    <section id="download" class="download">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Download BoxBell</h2>
-            <p class="section-subtitle">Available on all major platforms</p>
-            <div class="download-content">
-                <div class="download-info">
-                    <h3>Start your training today!</h3>
-                    <p>BoxBell is available for free on App Store and Google Play. Download the app and start improving your boxing training from day one.</p>
-                    <div class="download-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Free to download</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>No annoying ads</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Regular updates</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>24/7 support</span>
-                        </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Contact</h2>
+                    <form>
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Email address" required>
+                        <textarea placeholder="Message" rows="4" required></textarea>
+                        <button type="submit" class="contact-button">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="company-logo">
+                        <img src="sashax_logo.png" alt="SASHAX" class="footer-logo-image">
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            X / Twitter
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:sashaxholding@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            sashaxholding@gmail.com
+                        </a>
                     </div>
                 </div>
-                <div class="download-buttons">
-                    <a href="#" class="download-btn app-store">
-                        <i class="fab fa-apple"></i>
-                        <div class="btn-text">
-                            <span class="btn-title">Download on</span>
-                            <span class="btn-subtitle">App Store</span>
-                        </div>
-                    </a>
-                    <a href="#" class="download-btn google-play coming-soon">
-                        <i class="fab fa-google-play"></i>
-                        <div class="btn-text">
-                            <span class="btn-title">Coming Soon</span>
-                            <span class="btn-subtitle">Google Play</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="version-info">
-                <p>Current version: 1.0.0 | Requires iOS 12.0+ or Android 8.0+</p>
             </div>
         </div>
     </section>
@@ -357,46 +152,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <div class="logo-text">
-                            <span class="logo-title">BOXBELL</span>
-                        </div>
-                    </div>
-                    <p>The most complete and easy-to-use boxing timer application.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#modes">Modes</a></li>
-                        <li><a href="#download">Download</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 BoxBell. All rights reserved.</p>
-            </div>
+            <p>&copy; 2025 SASHAX Holding. All rights reserved.</p>
         </div>
     </footer>
 
