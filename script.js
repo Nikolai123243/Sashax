@@ -408,3 +408,5 @@ function createScrollProgress() {
 
 // Initialize scroll progress
 createScrollProgress();
+
+
