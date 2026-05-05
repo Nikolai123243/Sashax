@@ -410,3 +410,27 @@ function createScrollProgress() {
 createScrollProgress();
 
 
+
+// Ambient Clock Logic for Temps Section
+function updateAmbientClock() {
+    const clockElement = document.getElementById('ambient-clock');
+    const dateElement = document.getElementById('ambient-date');
+    
+    if (!clockElement || !dateElement) return;
+
+    const now = new Date();
+    
+    // Update Time
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    
+    // Update Date
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = now.toLocaleDateString(undefined, options);
+}
+
+// Update clock immediately and then every second
+updateAmbientClock();
+setInterval(updateAmbientClock, 1000);
