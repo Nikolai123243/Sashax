@@ -1,0 +1,3 @@
+# Clean URLs → static file (fixes 404 when opening /terms without .html)
+/terms   /terms.html   301
+/terms/  /terms.html   301
